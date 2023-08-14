@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Flask App!</h1>
+    <button id="getDataBtn">Get Data</button>
+    <button id="setCookieBtn">Set Cookie</button>
+    <p><a href="{{ url_for('submit_form') }}">Submit Form</a></p>
+    <div id="output"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+
